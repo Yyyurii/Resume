@@ -70,13 +70,58 @@
 
 .tabs-titles {
   font-size: 34px;
+  padding: 20px 0 20px 0;
+  text-align: center;
 }
 
 .about-me-tab span {
   padding: 20px 0 20px 0;
 }
 
+.skills-tab {
+  display: flex;
+  flex-direction: column;
+}
+
 .skills-tab span {
-  padding: 20px 0 20px 0;
   text-align: center;
+}
+
+.skills-tab .container {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 0 60px 0;
+}
+
+.skills-tab__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-tab .container img {
+  width: 90px;
+  height: 90px;
+}
+
+.portfolio-tab {
+  background-color: #F6F6F6;
+  padding: 100px 0 100px;
+  text-align: center;
+}
+
+
+.portfolio-tab__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-tab__item img {
+  padding: 40px 0 40px;
+}
+
+.project-name {
+  padding: 40px 0 0;
+  font-size: 18px;
+  text-decoration-line: underline;
 }

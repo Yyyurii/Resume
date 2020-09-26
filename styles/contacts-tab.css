@@ -1,0 +1,31 @@
+.contacts-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.contacts-tab__content {
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+
+.contacts-tab__item {
+  display: flex;
+  align-items: center;
+  padding: 40px 0 0;
+}
+
+.contacts-tab img {
+  width: 40px;
+  margin-right: 40px;
+}
+
+.contacts-tab button {
+  border-radius: 40px;
+  padding: 15px;
+  background: black;
+  color: white;
+  font-size: 20px;
+}

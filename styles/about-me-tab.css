@@ -1,0 +1,26 @@
+.about-me-tab {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px 30px 80px;
+  background: #F6F6F6;
+}
+
+.tabs-titles {
+  font-size: 34px;
+  font-family: 'Gilroy Bold';
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+
+.about-me-tab span {
+  padding: 20px 0 20px 0;
+}
+
+/* @media (max-width: 1224px) {
+
+  .about-me-tab {
+    padding: 30px 150px 80px;
+  }
+
+} */

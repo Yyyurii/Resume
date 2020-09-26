@@ -1,0 +1,28 @@
+.skills-tab {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 30px;
+  background: #ffffff;
+}
+
+.skills-tab span {
+  text-align: center;
+}
+
+.skills-tab .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 0 0;
+}
+
+.skills-tab__item {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.skills-tab .container img {
+  width: 90px;
+  height: 90px;
+}

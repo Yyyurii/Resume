@@ -14,11 +14,11 @@
 
     <section class="home-section">
       <div class="tabheader">
-        <div class="tabheader__item tabheader__item_active">Home</div>
-        <div class="tabheader__item">About me</div>
-        <div class="tabheader__item">Skills</div>
-        <div class="tabheader__item">Portfolio</div>
-        <div class="tabheader__item">Contacts</div>
+        <div class="tabheader__item tabheader__item_active"><a class="tabs-item" href="#home">Home</a></div>
+        <div class="tabheader__item"><a class="tabs-item" href="#about-me">About me</a></div>
+        <div class="tabheader__item"><a class="tabs-item" href=#skills>Skills</a></div>
+        <div class="tabheader__item"><a class="tabs-item" href=#portfolio>Portfolio</a></div>
+        <div class="tabheader__item"><a class="tabs-item" href=#contacts>Contacts</a></div>
       </div>
   
       <div class="divider"></div>
@@ -31,11 +31,12 @@
               <span></span>
             </label>
             <ul class="menu__box">
-              <li><a class="menu__item" href="#">Home</a></li>
-              <li><a class="menu__item" href="#">About me</a></li>
-              <li><a class="menu__item" href="#">Skills</a></li>
-              <li><a class="menu__item" href="#">Portfolio</a></li>
-              <li><a class="menu__item" href="#">Contacts</a></li>
+              <li><a class="menu__item" href="#home">Home</a></li>
+              <li><a class="menu__item" href="#about-me">About me</a></li>
+              <li><a class="menu__item" href="#skills">Skills</a></li>
+              <li><a class="menu__item" href="#portfolio">Portfolio</a></li>
+              <li><a class="menu__item" href="#contacts">Contacts</a></li>
+              <li><a class="menu__item" href="#"><span class=""><span class="">UA</span> | <span>ENG</span></span></a></li>
             </ul>
           </div>
           <span class="home-tab__name">Yurii<br>Kryvko</span>
@@ -48,8 +49,8 @@
       </div>
     </section>
 
-    <section class="about-me-tab section-margin">
-      <span class="tabs-titles">About me</span>
+    <section class="about-me-tab section-margin" id="about-me">
+      <span class="tabs-titles" >About me</span>
       <span>
         Hi, I'm Yurii – Front-end Developer from Kyiv.<br>
         I'm interested in web development and everything connected with it.
@@ -63,7 +64,7 @@
       </span>
     </section>
 
-    <section class="skills-tab section-margin">
+    <section class="skills-tab section-margin" id="skills">
       <span class="tabs-titles">Skills</span>
       <span>
         I have knowledge and experience working with programs such as
@@ -96,7 +97,7 @@
       </div>
     </section>
 
-    <section class="portfolio-tab section-margin">
+    <section class="portfolio-tab section-margin" id="portfolio">
       <span class="portfolio-tab__title tabs-titles">Portfolio</span>
       <div class="portfolio-tab__item">
         <img src="images/landing-page.jpg" alt="landing">
@@ -112,7 +113,7 @@
       </div>
     </section>
 
-    <section class="contacts-tab">
+    <section class="contacts-tab" id="contacts">
       <span class="contacts-tab__content tabs-titles">Contacts</span>
       <span class="contacts-tab__content">
         Want to know more or just chat?<br>

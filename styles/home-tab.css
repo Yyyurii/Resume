@@ -31,6 +31,7 @@
 }
 
 .home-tab__years-old {
+  text-align: center;
   font-size: 18px;
 }
 
@@ -67,6 +68,10 @@
 @media (max-width: 768px) {
   .home-section {
     padding: 30px 50px 80px;
+  }
+
+  .home-tab__years-old {
+    text-align: start;
   }
 
   .home-tab__img {

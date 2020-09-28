@@ -10,15 +10,13 @@
 .menu__btn {
   display: flex; /* используем flex для центрирования содержимого */
   align-items: center;  /* центрируем содержимое кнопки */
-  position: fixed;
-  /* top: 20px;
-  left: 20px; */
+  position: absolute;
   top: 90px;
   right: 56px;
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 /* добавляем "гамбургер" */
 .menu__btn > span,
@@ -41,18 +39,15 @@
 
 .menu__box {
   display: block;
-  position: fixed;
+  position: absolute;
   visibility: hidden;
-  top: 0;
-  /* left: -100%; */
+  top: 80px;
   right: 25px;
   width: 300px;
-  /* height: 100%; */
   margin: 0;
-  padding: 80px 0;
+  padding: 0 0 80px 0;
   list-style: none;
-  /* text-align: center; */
-  background-color: #ECEFF1;
+  background-color: #ffffff;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 }
 /* элементы меню */
@@ -60,13 +55,12 @@
   display: block;
   padding: 10px 24px;
   color: #333;
-  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
 }
 .menu__item:hover {
-  background-color: #CFD8DC;
+  background-color: #E5E5E5;
 }
 
 #menu__toggle:checked ~ .menu__btn > span {
@@ -82,9 +76,9 @@
 }
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
-  /* left: 0; */
   right: 25px;
 }
+
 
 .menu__btn > span,
 .menu__btn > span::before,

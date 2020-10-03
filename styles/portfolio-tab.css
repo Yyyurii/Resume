@@ -13,7 +13,8 @@
 
 .portfolio-tab__item img {
   padding: 40px 0 40px;
-  max-width: 100%;
+  max-width: 936.24px;
+  max-height: 510px;
 }
 
 .project-name {
@@ -48,4 +49,8 @@
     padding: 80px 25px 80px;
   }
 
+}
+
+.portfolio-tab a {
+  color: black;
 }

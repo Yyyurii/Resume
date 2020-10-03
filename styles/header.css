@@ -21,6 +21,11 @@
   background-color: #828282;
 }
 
+/* .tabheader a {
+  text-decoration: none;
+  color: #828282;
+} */
+
 @media (max-width: 768px) {
 
   .tabheader {

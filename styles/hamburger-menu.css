@@ -1,47 +1,15 @@
-/* скрываем чекбокс */
 .hamburger-menu {
   display: none;
 }
 
-#menu__toggle {
-  opacity: 0;
-}
-/* стилизуем кнопку */
-.menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center;  /* центрируем содержимое кнопки */
-  position: absolute;
-  top: 90px;
-  right: 56px;
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-  z-index: 2;
-}
-/* добавляем "гамбургер" */
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #616161;
-}
-.menu__btn > span::before {
-  content: '';
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: '';
-  top: 8px;
-}
 
 .menu__box {
   display: block;
   position: absolute;
   visibility: hidden;
-  top: 80px;
+  z-index: 10;
+  opacity: 0.9;
+  top: 70px;
   right: 25px;
   width: 300px;
   margin: 0;
@@ -50,6 +18,7 @@
   background-color: #ffffff;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 }
+
 /* элементы меню */
 .menu__item {
   display: block;
@@ -59,38 +28,11 @@
   font-weight: 600;
   text-decoration: none;
 }
+
 .menu__item:hover {
   background-color: #E5E5E5;
 }
 
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  right: 25px;
-}
-
-
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  transition-duration: .25s;
-}
-/* .menu__box {
-  transition-duration: .25s;
-}
-.menu__item {
-  transition-duration: .20s;
-} */
 
 @media (max-width: 768px) {
   .hamburger-menu {
@@ -101,12 +43,13 @@
     right: 50px;
   }
 
-  #menu__toggle:checked ~ .menu__box {
+  #menu__toggle:checked~.menu__box {
     right: 50px;
   }
 
 
 }
+
 @media (max-width: 480px) {
   .hamburger-menu {
     display: block;
@@ -116,8 +59,74 @@
     right: 25px;
   }
 
-  #menu__toggle:checked ~ .menu__box {
+  #menu__toggle:checked~.menu__box {
     right: 25px;
   }
 
+}
+
+#hamburger-icon {
+  width: 33px;
+  height: 20px;
+  position: absolute;
+  top: 85px;
+  right: 55px;;
+  display: block;
+  z-index: 33;
+  /* margin: 100px auto 50px auto; */
+}
+
+#hamburger-icon .line {
+  display: block;
+  background: black;
+  width: 33px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  border-radius: 4px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+#hamburger-icon .line.line-1 {
+  top: 0;
+}
+
+#hamburger-icon .line.line-2 {
+  top: 50%;
+}
+
+#hamburger-icon .line.line-3 {
+  top: 100%;
+}
+
+#hamburger-icon:hover .line-1,
+#hamburger-icon:focus .line-1 {
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+}
+
+#hamburger-icon:hover .line-3,
+#hamburger-icon:focus .line-3 {
+  transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  -moz-transform: translateY(4px);
+}
+
+#hamburger-icon.active .line-1 {
+  transform: translateY(5px) translateX(0) rotate(45deg);
+  -webkit-transform: translateY(5px) translateX(0) rotate(45deg);
+  -moz-transform: translateY(5px) translateX(0) rotate(45deg);
+}
+
+#hamburger-icon.active .line-2 {
+  opacity: 0;
+}
+
+#hamburger-icon.active .line-3 {
+  transform: translateY(-15px) translateX(0) rotate(-45deg);
+  -webkit-transform: translateY(-15px) translateX(0) rotate(-45deg);
+  -moz-transform: translateY(-15px) translateX(0) rotate(-45deg);
 }

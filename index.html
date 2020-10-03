@@ -14,7 +14,7 @@
 
     <section class="home-section">
       <div class="tabheader">
-        <div class="tabheader__item tabheader__item_active"><a class="tabs-item" href="#home">Home</a></div>
+        <div class="tabheader__item home" ><a class="tabs-item" href="#home">Home</a></div>
         <div class="tabheader__item"><a class="tabs-item" href="#about-me">About me</a></div>
         <div class="tabheader__item"><a class="tabs-item" href=#skills>Skills</a></div>
         <div class="tabheader__item"><a class="tabs-item" href=#portfolio>Portfolio</a></div>
@@ -26,9 +26,11 @@
       <div class="home-tab">
         <div class="container">
           <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
+            <a id="hamburger-icon" href="#" title="Menu">
+              <span class="line line-1"></span>
+              <span class="line line-2"></span>
+              <span class="line line-3"></span>
+            </a>
             </label>
             <ul class="menu__box">
               <li><a class="menu__item" href="#home">Home</a></li>
@@ -100,16 +102,24 @@
     <section class="portfolio-tab section-margin" id="portfolio">
       <span class="portfolio-tab__title tabs-titles">Portfolio</span>
       <div class="portfolio-tab__item">
-        <img src="images/landing-page.jpg" alt="landing">
-        <span class="project-name">Braun landing page - Concept</span>
+        <img src="images/vinsent-project.jpg" alt="landing">
+        <span class="project-name"><a href="https://yyyurii.github.io/Vinsent/">Vinsent landing page</a></span>
       </div>
       <div class="portfolio-tab__item">
-        <img src="images/landing-page.jpg" alt="landing">
-        <span class="project-name">Braun landing page - Concept</span>
+        <img src="images/newspaper.jpg" alt="landing">
+        <span class="project-name"><a href="http://Yyyurii.github.io/old-newspaper">Newspaper landing page</a></span>
       </div>
       <div class="portfolio-tab__item">
-        <img src="images/landing-page.jpg" alt="landing">
-        <span class="project-name">Braun landing page - Concept</span>
+        <img src="images/chat-project.jpg" alt="app">
+        <span class="project-name"><a href="https://yyyurii.github.io/Chat-project/">Chat app</a></span>
+      </div>
+      <div class="portfolio-tab__item">
+        <img src="images/twitter-project.jpg" alt="app">
+        <span class="project-name"><a href="https://yyyurii.github.io/My-Twitter-React-app/">Twitter - React app</a></span>
+      </div>
+      <div class="portfolio-tab__item">
+        <img src="images/weather-project.jpg" alt="app">
+        <span class="project-name"><a href="https://yyyurii.github.io/Weather-React-app/">Weather - React app</a></span>
       </div>
     </section>
 

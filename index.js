@@ -3,19 +3,32 @@ const hamburger = document.getElementById('hamburger-icon');
 const menuBox = document.querySelector('.menu__box');
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const homeTab = document.querySelector('.home');
+const tabs = document.querySelectorAll('.tabs-item');
 
-document.addEventListener('DOMContentLoaded', function() {
 
-  hamburger.onclick = (function() {
-     hamburger.classList.toggle('active');
-     menuBox.style.visibility = menuBox.style.visibility === 'visible' ? '' : 'visible';
-     return false;
+document.addEventListener('DOMContentLoaded', function () {
+  homeTab.classList.add('tabheader__item_active');
+
+  hamburger.onclick = (function () {
+    hamburger.classList.toggle('active');
+    menuBox.style.visibility = menuBox.style.visibility === 'visible' ? '' : 'visible';
+    return false;
   });
-
 });
 
-menuBox.addEventListener('click', (event) => {
 
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset === 0) {
+    homeTab.classList.add('tabheader__item_active');
+  } else {
+    tabs.forEach((item, i) => {
+      item.classList.remove('tabheader__item_active');
+    })
+  }
+});
+
+
+menuBox.addEventListener('click', (event) => {
   const tabs = document.querySelectorAll('.menu__item');
   if (event.target && event.target.classList.contains('menu__item')) {
     tabs.forEach((item, i) => {
@@ -28,8 +41,8 @@ menuBox.addEventListener('click', (event) => {
   }
 });
 
+
 document.querySelector('.tabheader').addEventListener('click', (event) => {
-  const tabs = document.querySelectorAll('.tabs-item');
   if (event.target && event.target.classList.contains('tabs-item')) {
     tabs.forEach((item, i) => {
       if (event.target == item) {

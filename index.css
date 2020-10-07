@@ -1,13 +1,13 @@
-@import './styles/reset.css';
-@import './styles/fonts.css';
-@import './styles/media.css';
-@import './styles/header.css';
-@import './styles/home-tab.css';
-@import './styles/about-me-tab.css';
-@import './styles/skills-tab.css';
-@import './styles/portfolio-tab.css';
-@import './styles/contacts-tab.css';
-@import './styles/hamburger-menu.css';
+@import 'styles/reset.css';
+@import 'styles/fonts.css';
+@import 'styles/media.css';
+@import 'styles/header.css';
+@import 'styles/home-tab.css';
+@import 'styles/about-me-tab.css';
+@import 'styles/skills-tab.css';
+@import 'styles/portfolio-tab.css';
+@import 'styles/contacts-tab.css';
+@import 'styles/hamburger-menu.css';
 
 body {
   background-color: #E5E5E5;

@@ -8,7 +8,7 @@
   position: absolute;
   visibility: hidden;
   z-index: 10;
-  opacity: 0.9;
+  opacity: 1;
   top: 70px;
   right: 25px;
   width: 300px;
@@ -70,7 +70,8 @@
   height: 20px;
   position: absolute;
   top: 85px;
-  right: 55px;;
+  right: 55px;
+  ;
   display: block;
   z-index: 33;
   /* margin: 100px auto 50px auto; */
@@ -87,6 +88,9 @@
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 0.4s;
+
 }
 
 #hamburger-icon .line.line-1 {

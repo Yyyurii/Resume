@@ -1,0 +1,21 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "my resume",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yyyurii/Resume.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yyyurii/Resume/issues"
+  },
+  "homepage": "https://github.com/Yyyurii/Resume#readme"
+}

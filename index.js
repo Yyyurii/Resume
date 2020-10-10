@@ -54,8 +54,7 @@ document.querySelector('.tabheader').addEventListener('click', (event) => {
   }
 });
 
-
-
-
-
-console.log(window.pageYOffset)
+document.querySelector('.btn').addEventListener('click', ()=> {
+  console.log('mail')
+  window.location = document.getElementById('mail-link').href;
+})

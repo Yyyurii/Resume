@@ -88,9 +88,6 @@
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
-  -webkit-transition-property: opacity;
-  -webkit-transition-duration: 0.4s;
-
 }
 
 #hamburger-icon .line.line-1 {

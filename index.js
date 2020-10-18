@@ -54,7 +54,23 @@ document.querySelector('.tabheader').addEventListener('click', (event) => {
   }
 });
 
-document.querySelector('.btn').addEventListener('click', ()=> {
+document.querySelector('.btn').addEventListener('click', () => {
   console.log('mail')
   window.location = document.getElementById('mail-link').href;
 })
+
+$(function() {
+  $('.scrollup').click(function() {
+    $("html, body").animate({
+      scrollTop:0
+    },800);
+  })
+})
+$(window).scroll(function() {
+  if ($(this).scrollTop()>200) {
+    $('.scrollup').fadeIn();
+  }
+  else {
+    $('.scrollup').fadeOut();
+  }
+});

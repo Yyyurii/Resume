@@ -8,6 +8,7 @@
 @import 'styles/portfolio-tab.css';
 @import 'styles/contacts-tab.css';
 @import 'styles/hamburger-menu.css';
+@import 'styles/scrollup.css';
 
 body {
   background-color: #E5E5E5;
@@ -27,3 +28,5 @@ a {
 html {
   scroll-behavior: smooth;
   }
+
+  

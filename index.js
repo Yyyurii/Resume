@@ -5,7 +5,6 @@ const hamburgerMenu = document.querySelector('.hamburger-menu');
 const homeTab = document.querySelector('.home');
 const tabs = document.querySelectorAll('.tabs-item');
 
-
 document.addEventListener('DOMContentLoaded', function () {
   homeTab.classList.add('tabheader__item_active');
 
@@ -16,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
 window.addEventListener('scroll', function () {
   if (window.pageYOffset === 0) {
     homeTab.classList.add('tabheader__item_active');
@@ -26,7 +24,6 @@ window.addEventListener('scroll', function () {
     })
   }
 });
-
 
 menuBox.addEventListener('click', (event) => {
   const tabs = document.querySelectorAll('.menu__item');
@@ -40,7 +37,6 @@ menuBox.addEventListener('click', (event) => {
     })
   }
 });
-
 
 document.querySelector('.tabheader').addEventListener('click', (event) => {
   if (event.target && event.target.classList.contains('tabs-item')) {
@@ -59,18 +55,45 @@ document.querySelector('.btn').addEventListener('click', () => {
   window.location = document.getElementById('mail-link').href;
 })
 
-$(function() {
-  $('.scrollup').click(function() {
+$(function () {
+  $('.scrollup').click(function () {
     $("html, body").animate({
-      scrollTop:0
-    },800);
+      scrollTop: 0
+    }, 800);
   })
 })
-$(window).scroll(function() {
-  if ($(this).scrollTop()>200) {
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 200) {
     $('.scrollup').fadeIn();
   }
   else {
     $('.scrollup').fadeOut();
   }
 });
+
+// 
+class Skills {
+  constructor(src, alt, skillName, parent) {
+    this.src = src;
+    this.alt = alt;
+    this.skillName = skillName;
+    this.parent = document.querySelector(parent);
+  }
+
+  render() {
+    const element = document.createElement('div');
+    element.classList.add('skills-tab__item');
+    element.innerHTML = `
+      <img src="${this.src}" alt="${this.alt}">
+      <span>${this.skillName}</span>
+    `;
+    this.parent.append(element);
+  }
+}
+
+new Skills('images/html-icon.jpg', 'html 5', 'HTML 5', '.skills-container').render();
+new Skills('images/css-icon.jpg', 'css3', 'CCS3', '.skills-container').render();
+new Skills('images/javascript-icon.jpg', 'JavaScript', 'JavaScript', '.skills-container').render();
+new Skills('images/jquery-icon.jpg', 'jQuery', 'jQuery', '.skills-container').render();
+new Skills('images/react-icon.jpg', 'React', 'React', '.skills-container').render();
+new Skills('images/git-icon.jpg', 'Git', 'Git', '.skills-container').render();

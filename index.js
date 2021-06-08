@@ -96,4 +96,5 @@ new Skills('images/css-icon.jpg', 'css3', 'CCS3', '.skills-container').render();
 new Skills('images/javascript-icon.jpg', 'JavaScript', 'JavaScript', '.skills-container').render();
 new Skills('images/jquery-icon.jpg', 'jQuery', 'jQuery', '.skills-container').render();
 new Skills('images/react-icon.jpg', 'React', 'React', '.skills-container').render();
+new Skills('images/gulp.png', 'Gulp', 'Gulp', '.skills-container').render();
 new Skills('images/git-icon.jpg', 'Git', 'Git', '.skills-container').render();

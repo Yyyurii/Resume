@@ -30,7 +30,6 @@ menuBox.addEventListener('click', (event) => {
   if (event.target && event.target.classList.contains('menu__item')) {
     tabs.forEach((item, i) => {
       if (event.target == item) {
-        console.log('das')
         hamburger.classList.toggle('active');
         menuBox.style.visibility = menuBox.style.visibility === 'visible' ? '' : 'visible';
       }
@@ -62,12 +61,18 @@ $(function () {
     }, 800);
   })
 })
+
 $(window).scroll(function () {
   if ($(this).scrollTop() > 200) {
     $('.scrollup').fadeIn();
   }
   else {
     $('.scrollup').fadeOut();
+  }
+
+  if ($(this).scrollTop() > 100) {
+    hamburger.classList.remove('active');
+    menuBox.style.visibility = menuBox.style.visibility === 'visible' ? '' : '';
   }
 });
 

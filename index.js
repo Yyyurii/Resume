@@ -50,7 +50,6 @@ document.querySelector('.tabheader').addEventListener('click', (event) => {
 });
 
 document.querySelector('.btn').addEventListener('click', () => {
-  console.log('mail')
   window.location = document.getElementById('mail-link').href;
 })
 

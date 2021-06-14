@@ -1,7 +1,7 @@
 .scrollup {
   position: fixed;
   right: 20px; 
-  bottom: 0px; 
+  bottom: 20px; 
   padding: 4px 10px; 
   font-size: 40px; 
   cursor: pointer;
@@ -16,14 +16,14 @@
 
 @media (max-width: 768px) {
   .scrollup {
-    right: 5px;
+    right: 15px;
   }
 
 }
 
 @media (max-width: 480px) {
   .scrollup {
-    right: -7px;
+    right: 7px;
   }
 
 }

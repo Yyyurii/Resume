@@ -1,0 +1,33 @@
+.tabheader {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+.tabheader__item {
+  font-size: 18px;
+  line-height: 22px;
+  color: #828282;
+}
+
+.tabheader__item_active {
+  font-weight: bold;
+  color: #070707;
+}
+
+.divider {
+  height: 1px;
+  margin: 0 auto;
+  background-color: #828282;
+}
+
+@media (max-width: 768px) {
+
+  .tabheader {
+    display: none;
+  }
+
+  .divider {
+    display: none;
+  }
+}

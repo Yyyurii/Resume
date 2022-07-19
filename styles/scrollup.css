@@ -1,9 +1,9 @@
 .scrollup {
   position: fixed;
   right: 20px; 
-  bottom: 0px; 
+  bottom: 20px; 
   padding: 4px 10px; 
-  font-size: 20px; 
+  font-size: 45px; 
   cursor: pointer;
   display: none; 
   text-align: center; 
